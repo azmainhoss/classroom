@@ -1,4 +1,4 @@
-# django_basics
+# Django Basic Setup
 Code Used for Basic Teaching
 
 ## Please review the hands-on-code used in sessions 
