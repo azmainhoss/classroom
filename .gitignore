@@ -1,0 +1,3 @@
+env
+classroom/db.sqlite3
+classroom/classroom/__pycache__
