@@ -9,6 +9,7 @@ Code Used for Basic Teaching
 - Activate Virtual Env 
     - Linux command: `source env/bin/activate` 
     - Windows command: `env\Scripts\activate.bat`
+- Clone repo with `git` using `git clone https://github.com/engagepy/django_basics.git`
 - Install requirements `pip install -r requirements.txt`
 - Install Django `pip install django`
 - Use `django-admin` to `startproject`
