@@ -14,4 +14,5 @@ Code Used for Basic Teaching
 - Use `python manage.py makemigrations` and `python3 manage.py migrate --run-syncdb`
 - Try `python manage.py runserver` to test valid install
 
-Do star the repo, and feel free to create a specific to the code base here ! 
+## Keep Building
+## Do star the repo, and feel free to create a discussion specific to the code in this repo only ! 
