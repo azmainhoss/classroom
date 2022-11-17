@@ -9,7 +9,7 @@ Code Used for Basic Teaching
 - Activate Virtual Env 
     - Linux command: `source env/bin/activate` 
     - Windows command: `env\Scripts\activate.bat`
-- Install requiremets `pip install -r requirements.txt`
+- Install requirements `pip install -r requirements.txt`
 - Install Django `pip install django`
 - Use `django-admin` to `startproject`
 - Use `python manage.py makemigrations` and `python manage.py migrate`
