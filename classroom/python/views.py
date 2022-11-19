@@ -15,19 +15,15 @@ class SchoolCreate(CreateView):
     form_class = SchoolForm
     template_name = "python/create.html"
 
-
-class SubjectView(TemplateView):
-    template_name = "python/topics.html"
-
-class SubjectsCreate(CreateView):
-    model = Subject
-    form_class = SubjectForm
-    template_name = "python/create.html"
-
 class SchoolView(ListView):
     model = School
     template_name = "python/list.html"
 
-class SubjectsView(ListView):
+class SubjectCreate(CreateView):
     model = Subject
-    template_name = "python/list.html"
+    form_class = SubjectForm
+    template_name = "python/create.html"
+
+class SubjectView(ListView):
+    model = Subject
+    template_name = "python/subjectlist.html"
