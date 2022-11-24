@@ -4,18 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subject List</title>
+    <title>Teacher list</title>
 </head>
 <body align="center">
+    
+    {% for teacher in object_list %}
 
-    {% for subject in object_list %}
-    
-    {{subject.name | title}} - {{subject.student_numbers}}
-    
-    
+    {{teacher.name | title}} - {{teacher.subject_name}}
     <br>
     {% endfor %}
-
 </body>
 <p align="center"><a href=" {% url 'home' %}">Go Home</a></p>
 </html>

@@ -23,3 +23,13 @@ class Subject(models.Model):
     def get_absolute_url(self):
         return reverse ('home')
 
+class Teacher(models.Model):
+    name = models.CharField(max_length=100, unique=True)
+    subject_name = models.CharField(max_length=50)   
+
+    def __str__(self):
+        return f"{self.name} has {self.subject_name}"
+
+    def get_absolute_url(self):
+        return reverse ("home")        
+
