@@ -10,7 +10,7 @@
     
     {% for teacher in object_list %}
 
-    {{teacher.name | title}} - {{teacher.subject_name}}
+    {{teacher.name | title}} - {{teacher.school.name}} - {{teacher.subject.name | title }}
     <br>
     {% endfor %}
 </body>

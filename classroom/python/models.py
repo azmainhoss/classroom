@@ -18,17 +18,22 @@ class Subject(models.Model):
     student_numbers = models.IntegerField(default = 0)
 
     def __str__(self):
-        return f"{self.name} has {self.student_numbers}"
+        return f"{self.name}"
 
     def get_absolute_url(self):
         return reverse ('home')
 
 class Teacher(models.Model):
     name = models.CharField(max_length=100, unique=True)
-    subject_name = models.CharField(max_length=50)   
+    subject = models.ForeignKey(Subject, on_delete=models.CASCADE, blank=True)
+    school = models.ForeignKey(School, on_delete=models.CASCADE, blank=True) 
+
 
     def __str__(self):
-        return f"{self.name} has {self.subject_name}"
+        return f"{self.name} = {self.subject.name}"
+
+    def __repr__(self):
+        return f"{self.name} - {self.subject.name}"
 
     def get_absolute_url(self):
         return reverse ("home")        
